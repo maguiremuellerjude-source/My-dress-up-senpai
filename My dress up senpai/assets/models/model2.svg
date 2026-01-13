@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 420" width="200" height="420">
+  <!-- model 2: broad-shouldered, short hair -->
+  <defs>
+    <clipPath id="bodyClip2"><path d="M50 130 C50 190 60 260 70 320 C98 340 102 340 132 320 C142 260 152 190 150 130 Z"/></clipPath>
+  </defs>
+  <!-- skin -->
+  <g fill="#ecdcd6">
+    <circle cx="100" cy="60" r="34"/>
+    <ellipse cx="100" cy="120" rx="44" ry="20"/>
+  </g>
+  <!-- short hair / bob -->
+  <g>
+    <path d="M44 46 C58 22 142 22 156 46 C150 30 130 18 100 18 C70 18 50 30 44 46 Z" fill="#5b3a2e"/>
+    <path d="M60 62 C70 58 130 58 140 62 C133 74 118 78 100 78 C82 78 67 74 60 62 Z" fill="#4a2e25" opacity="0.9"/>
+  </g>
+  <!-- body (boxier) -->
+  <g fill="#e9f1ff" clip-path="url(#bodyClip2)">
+    <path d="M50 130 C50 190 60 260 70 320 C98 340 102 340 132 320 C142 260 152 190 150 130 Z" fill="#e9f1ff" stroke="#d7e6ff"/>
+  </g>
+  <!-- arms (relaxed) -->
+  <g fill="#ecdcd6">
+    <path d="M36 170 C44 180 58 192 70 200"/>
+    <path d="M164 170 C156 180 142 192 130 200"/>
+  </g>
+  <!-- legs -->
+  <g fill="#d8d0d4">
+    <rect x="74" y="300" width="18" height="70" rx="6" fill="#d8d0d4"/>
+    <rect x="108" y="300" width="18" height="70" rx="6" fill="#d8d0d4"/>
+  </g>
+  <!-- simple face -->
+  <g fill="#2b2b2b">
+    <circle cx="92" cy="58" r="3"/>
+    <circle cx="108" cy="58" r="3"/>
+    <path d="M92 74 Q100 80 108 74" stroke="#b45" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

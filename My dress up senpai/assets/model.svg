@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 420" width="200" height="420">
+  <!-- simple model silhouette -->
+  <g fill="#f2d0c9">
+    <circle cx="100" cy="60" r="34" fill="#f4d7d0"/>
+    <ellipse cx="100" cy="120" rx="42" ry="18" fill="#f4d7d0"/>
+  </g>
+  <g fill="#e6e6f0">
+    <path d="M60 140 C55 200 55 260 60 320 C90 340 110 340 140 320 C145 260 145 200 140 140 Z" fill="#e9edf8" stroke="#e0e6fb"/>
+  </g>
+  <g fill="#e0d9d9">
+    <rect x="82" y="300" width="12" height="70" rx="6" fill="#e0d9d9"/>
+    <rect x="106" y="300" width="12" height="70" rx="6" fill="#e0d9d9"/>
+  </g>
+</svg>

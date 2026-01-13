@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dress Up Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Dress Up Game</h1></header>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Models</h2>
+      <div id="models" class="models">
+        <button data-src="assets/models/model1.svg" class="model-item selected">
+          <img src="assets/models/model1.svg" alt="Model 1"><span>Model 1</span>
+        </button>
+        <button data-src="assets/models/model2.svg" class="model-item">
+          <img src="assets/models/model2.svg" alt="Model 2"><span>Model 2</span>
+        </button>
+      </div>
+
+      <h2>Wardrobe</h2>
+      <div class="categories">
+        <button data-cat="all" class="cat active">All</button>
+        <button data-cat="head" class="cat">Head</button>
+        <button data-cat="top" class="cat">Top</button>
+        <button data-cat="bottom" class="cat">Bottom</button>
+        <button data-cat="shoes" class="cat">Shoes</button>
+      </div>
+
+      <div id="items" class="items"></div>
+
+      <div class="controls">
+        <button id="reset">Reset</button>
+        <button id="randomize">Randomize</button>
+        <button id="save">Save Image</button>
+        <div class="note">Tip: choose a model, click an item to add; drag to move; use sliders to scale/rotate.</div>
+      </div>
+    </aside>
+
+    <main class="preview-wrap">
+      <div id="preview" class="preview">
+        <img id="model" src="assets/models/model1.svg" alt="Model" class="model">
+        <div id="layerContainer" class="layers"></div>
+      </div>
+
+      <div class="inspector" id="inspector" aria-hidden="true">
+        <h3>Selected Item</h3>
+        <label>Scale <input type="range" id="scale" min="0.4" max="2.0" step="0.01" value="1"></label>
+        <label>Rotate <input type="range" id="rotate" min="-180" max="180" step="1" value="0"></label>
+        <div class="inspector-buttons">
+          <button id="bringFront">Bring Forward</button>
+          <button id="sendBack">Send Back</button>
+          <button id="remove">Remove</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
